@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Portfolio Design System - Professional Dark Theme with Purple Accents */
+
+@layer base {
+  :root {
+    /* Base colors - Dark theme optimized */
+    --background: 222 35% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 30% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 30% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Purple accent system */
+    --primary: 258 100% 65%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 258 100% 75%;
+
+    --secondary: 222 25% 12%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 222 20% 15%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 258 60% 45%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 25% 18%;
+    --input: 222 25% 18%;
+    --ring: 258 100% 65%;
+
+    --radius: 0.75rem;
+
+    /* Custom portfolio tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(222 35% 5%), hsl(258 30% 12%));
+    --card-gradient: linear-gradient(145deg, hsl(222 30% 8%), hsl(222 25% 10%));
+    --accent-gradient: linear-gradient(135deg, hsl(258 100% 65%), hsl(280 100% 70%));
+    --glow-purple: 0 0 30px hsl(258 100% 65% / 0.3);
+    --glow-soft: 0 0 40px hsl(258 100% 75% / 0.2);
+    
+    /* Shadows */
+    --shadow-elegant: 0 25px 50px -12px hsl(222 35% 5% / 0.8);
+    --shadow-card: 0 10px 25px -5px hsl(222 35% 5% / 0.5);
+    --shadow-glow: 0 0 40px hsl(258 100% 65% / 0.4);
+
+    /* Animation variables */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
