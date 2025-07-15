@@ -68,7 +68,7 @@ const Projects = () => {
       description: 'A stunning portfolio platform for creative professionals with smooth animations, gallery management, and client testimonial system.',
       image: project4,
       technologies: ['React', 'TypeScript', 'Tailwind', 'Framer Motion'],
-      liveUrl: 'https://demo-portfolio.com',
+      liveUrl: 'https://sami-p.vercel.app',
       githubUrl: 'https://github.com/sami/portfolio-platform',
       category: 'Portfolio'
     }

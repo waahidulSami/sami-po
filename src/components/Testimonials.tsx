@@ -1,8 +1,11 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Star, Quote } from 'lucide-react';
-
-
-
+import pic1 from '../assets/pic-1.jpeg'
+import pic2 from '../assets/pic-2.jpeg'
+import pic3 from '../assets/pic-3.jpg'
+import pic4 from '../assets/pic-4.jpeg'
+import pic5 from '../assets/pic-5.jpg'
+import pic6 from '../assets/pic-6.jpeg'
 
 
 const Testimonials = () => {
@@ -14,7 +17,7 @@ const Testimonials = () => {
       position: 'CEO, soft it care',
       content: 'Sami delivered an exceptional website that exceeded our expectations. The performance improvements were incredible - our page load times decreased by 60%!',
       rating: 5,
-      avatar: 'https://images.pexels.com/photos/4357505/pexels-photo-4357505.jpeg'
+      avatar: pic1,
     },
     {
       id: 2,
@@ -22,7 +25,7 @@ const Testimonials = () => {
       position: 'Founder, E-Commerce store grid',
       content: 'Working with Sami was a game-changer for our online store. The custom WooCommerce solution increased our conversion rate by 40%. Highly recommended!',
       rating: 5,
-      avatar: 'https://images.pexels.com/photos/8621979/pexels-photo-8621979.jpeg'
+      avatar: pic2,
     },
     {
       id: 3,
@@ -30,7 +33,7 @@ const Testimonials = () => {
       position: 'Logo designer',
       content: 'Sami\'s attention to detail and understanding of modern web design trends is outstanding. Our new website perfectly represents our brand and drives results.',
       rating: 5,
-      avatar: 'https://i.pinimg.com/736x/1a/8b/e8/1a8be8c0d50dae89a09fd02b16c48dcb.jpg'
+      avatar: pic3
     },
     {
       id: 4,
@@ -38,7 +41,7 @@ const Testimonials = () => {
       position: 'Owner, Local Business',
       content: 'The website Sami built for us has transformed our business. We\'re getting more leads than ever before, and customers love the user experience.',
       rating: 5,
-      avatar: 'https://images.pexels.com/photos/20709112/pexels-photo-20709112.jpeg'
+      avatar: pic4
     },
     {
       id: 5,
@@ -46,7 +49,7 @@ const Testimonials = () => {
       position: ' Content Creator',
       content: 'Sami created a beautiful, fast-loading blog that perfectly showcases my content. The SEO optimization has significantly improved my search rankings.',
       rating: 4,
-      avatar: 'https://i.pinimg.com/1200x/ab/c6/d9/abc6d9add64fd49cfa5def44b48c09e6.jpg'
+      avatar: pic5
     },
     {
       id: 6,
@@ -54,7 +57,7 @@ const Testimonials = () => {
       position: 'Restaurant Owner',
       content: 'Our restaurant\'s online presence has never been better. The website is beautiful, mobile-friendly, and has increased our online orders significantly.',
       rating: 5,
-      avatar: 'https://images.pexels.com/photos/5346114/pexels-photo-5346114.jpeg'
+      avatar: pic6
     }
   ];
 

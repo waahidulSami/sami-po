@@ -18,9 +18,10 @@ const Hero = () => {
   ];
 
   return (
-    <section 
-      id="hero" 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+<section
+  id="hero"
+  className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 sm:pt-32 pb-20 sm:pb-24"
+
       style={{
         backgroundImage: `linear-gradient(rgba(34, 34, 58, 0.8), rgba(34, 34, 58, 0.8)), url(${heroBg})`,
         backgroundSize: 'cover',
@@ -83,33 +84,35 @@ const Hero = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center space-x-6 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            {socialLinks.map((social, index) => (
-              <a
-                key={social.label}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-card/20 backdrop-blur-sm border border-border/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 hover:bg-card/30 transition-all duration-300 hover:scale-110"
-                aria-label={social.label}
-              >
-                <social.icon size={20} />
-              </a>
-            ))}
-          </div>
+<div className="flex justify-center space-x-6 animate-slide-up" style={{ animationDelay: '0.4s' }}>
+  {socialLinks.map((social) => (
+    <a
+      key={social.label}
+      href={social.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-12 h-12 rounded-full bg-card/20 backdrop-blur-sm border border-border/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 hover:bg-card/30 transition-all duration-300 hover:scale-110"
+      aria-label={social.label}
+    >
+      <social.icon size={20} />
+    </a>
+  ))}
+</div>
+
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <button
-          onClick={() => scrollToSection('about')}
-          className="text-muted-foreground hover:text-primary transition-colors"
-          aria-label="Scroll to About section"
-        >
-          <ArrowDown size={24} />
-        </button>
-      </div>
+<div className="hidden sm:flex absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+  <button
+    onClick={() => scrollToSection('about')}
+    className="text-muted-foreground hover:text-primary transition-colors"
+    aria-label="Scroll to About section"
+  >
+    <ArrowDown size={24} />
+  </button>
+</div>
+
     </section>
   );
 };
