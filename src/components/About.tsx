@@ -79,7 +79,7 @@ const About = () => {
                 <Button 
                   variant="glass" 
                   className="w-full lg:w-auto"
-                  onClick={() => window.open('https://docs.google.com/document/d/e/2PACX-1vQnn4v4Y3aJKrkIls5oo7dDjzmFmE-jr99GLkYkIiaz5lDvbXcmo76z_vRSY9_-eECnyHCGNzLiii_P/pub', '_blank')}
+                  onClick={() => window.open('https://drive.google.com/file/d/1pij0vxUn9xa3GlEKgTA_fNzNf6kOo7SF/view?usp=sharing', '_blank')}
                 >
                   <Download size={16} className="mr-2" />
                   Download Resume
