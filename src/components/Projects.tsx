@@ -193,7 +193,7 @@ const Projects = () => {
                 <Button 
                   variant="hero" 
                   size="lg"
-                  onClick={() => window.open('https://github.com/sami', '_blank')}
+                  onClick={() => window.open('https://github.com/waahidulSami', '_blank')}
                 >
                   View GitHub Profile
                 </Button>
